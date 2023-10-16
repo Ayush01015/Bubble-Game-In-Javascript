@@ -145,6 +145,9 @@ html,body{
     .pTop{
         padding: 0 20%;
     }
+    .pBottom{
+        overflow-y: unset;
+    }
     .elem{
         gap: 0.8rem;
         font-size: 0.9rem;  
