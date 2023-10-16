@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
 }
 
 html,body{
@@ -9,3 +13,115 @@ html,body{
     height: 100%;
 }
 
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(141, 190, 117);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pTop{
+    width: 100%;
+    height: 85px;
+    background-color: rgb(1, 81, 1);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+.elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+.box{
+    padding: 4px 13px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+}
+.pBottom{
+    width: 100%;
+    height: calc(100% - 85px);
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bubble{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(188, 216, 188);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble:hover{
+    background-color: rgb(135, 215, 135);
+    cursor: pointer;
+}
+
+
+/* 
+=========================
+    Responsive Code
+=========================
+*/
+
+@media(min-width:220px){
+    .pTop{
+        padding: 0 5%;
+    }
+    .elem{
+        gap: 0.5rem;
+        font-size: 0.5rem;  
+    }
+    .box{
+        padding: 4px 9px;
+        font-size: 0.8rem;
+    
+    }
+}
+
+@media(min-width:425px){
+    .pTop{
+        padding: 0 10%;
+    }
+    .elem{
+        font-size: 0.65rem;  
+    }
+}
+
+@media(min-width:768px){
+    .pTop{
+        padding: 0 20%;
+    }
+    .elem{
+        gap: 0.8rem;
+        font-size: 0.9rem;  
+    }
+    .box{
+        padding: 8px 13px;
+        font-size: 1rem;
+    }
+}
