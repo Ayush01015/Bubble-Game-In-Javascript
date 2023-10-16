@@ -65,6 +65,7 @@ html,body{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    overflow-y: scroll;
 }
 .center{
     align-items: center;
@@ -85,23 +86,28 @@ html,body{
     cursor: pointer;
 }
 
-.buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.start:hover{
-    background-color: #d09cfd;
-}
-.start{
+.btn{
     padding: 10px 30px;
     border-radius: 8px;
     background-color: #BC7AF9;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 800;
 }
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.reStart{
+    display: none;
+}
+.btn:hover{
+    background-color: #d09cfd;
+}
+
 /* 
 =========================
     Responsive Code
