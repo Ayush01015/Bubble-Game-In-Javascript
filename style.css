@@ -47,6 +47,7 @@ html,body{
     gap: 0.5rem;
     font-size: 0.9rem;
 }
+
 .box{
     padding: 4px 13px;
     background-color: white;
@@ -59,9 +60,8 @@ html,body{
 .pBottom{
     width: 100%;
     height: calc(100% - 85px);
-    /* align-items: center; */
-    /* justify-content: center; */
-    padding: 20px;
+    justify-content: center;
+    padding: 15px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
